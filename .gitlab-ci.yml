@@ -6,11 +6,11 @@
 
 job1:
   extends: .job
-  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.37.0
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.37.0@sha256:3cea372a13cbb9ae466ebac8213acc5217e5a396744dc937d8d1092d6b18f12c
 
 job2:
   extends: .job
-  image: node:18.14.2-bullseye-slim
+  image: node:18.14.2-bullseye-slim@sha256:36f3403a001b82d525afd2bdb7fcec0980543277dd86e9657964cce3438ae4b7
 
 job3:
   extends: .job
@@ -18,8 +18,8 @@ job3:
 
 job4:
   extends: .job
-  image: ghcr.io/terraform-linters/tflint-bundle:v0.45.0.1
+  image: ghcr.io/terraform-linters/tflint-bundle:v0.45.0.1@sha256:498abf1572842654cb92b4c55f8aec9763790438108ac4f4e7b6b60be11ea7e0
 
 job5:
   extends: .job
-  image: quay.io/keycloak/keycloak:21.0.1
+  image: quay.io/keycloak/keycloak:21.0.1@sha256:057e1264cae9adbd9be65235d0c837087b0accc183275803b7da81b1b7a2a94c

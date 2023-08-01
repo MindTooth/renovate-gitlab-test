@@ -1,0 +1,25 @@
+---
+.job:
+  stage: test
+  script:
+    - echo $CI_JOB_NAME
+
+job1:
+  extends: .job
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.37.0
+
+job2:
+  extends: .job
+  image: node:18.14.2-bullseye-slim
+
+job3:
+  extends: .job
+  image: ${CI_TEMPLATE_REGISTRY_HOST}/gitlab-org/terraform-images/releases/1.4:v0.52.0
+
+job4:
+  extends: .job
+  image: ghcr.io/terraform-linters/tflint-bundle:v0.45.0.1
+
+job5:
+  extends: .job
+  image: quay.io/keycloak/keycloak:21.0.1

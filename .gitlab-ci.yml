@@ -22,4 +22,4 @@ job4:
 
 job5:
   extends: .job
-  image: quay.io/keycloak/keycloak:21.0.1@sha256:057e1264cae9adbd9be65235d0c837087b0accc183275803b7da81b1b7a2a94c
+  image: quay.io/keycloak/keycloak:21.1.2@sha256:3408c186dde4a95c2b99ef1290721bf1d253d64ba3a1de0a46c667b8288051f0

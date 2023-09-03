@@ -18,7 +18,7 @@ job3:
 
 job4:
   extends: .job
-  image: ghcr.io/terraform-linters/tflint-bundle:v0.45.0.1@sha256:498abf1572842654cb92b4c55f8aec9763790438108ac4f4e7b6b60be11ea7e0
+  image: ghcr.io/terraform-linters/tflint-bundle:v0.48.0.0@sha256:523a85b4bf7af415cbb5f53ac1b56cd7501c8c8125f96c5b5cc19c895d894513
 
 job5:
   extends: .job

@@ -8,6 +8,14 @@
   ],
 
   "enabledManagers": ["gitlabci", "regex"],
+
+  "packageRules": [
+    {
+      "matchPackageNames": ["passbolt/passbolt_api"],
+      "extractVersion": "^v(?<version>.*)$"
+    }
+  ],
+
   "regexManagers": [
     {
       "customType": "regex",

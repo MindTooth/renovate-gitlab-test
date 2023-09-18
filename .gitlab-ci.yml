@@ -4,6 +4,12 @@
   script:
     - echo $CI_JOB_NAME
 
+variables:
+  # renovate: datasource=docker depName=keycloak/keycloak
+  KEYCLOAK_VERSION: 18.0.0
+  # renovate: datasource=github-releases depName=passbolt/passbolt_api
+  PASSBOLT_VERSION: 4.0.0
+
 job1:
   extends: .job
   image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.37.0@sha256:3cea372a13cbb9ae466ebac8213acc5217e5a396744dc937d8d1092d6b18f12c

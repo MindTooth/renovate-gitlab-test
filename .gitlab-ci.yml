@@ -16,7 +16,7 @@ job1:
 
 job2:
   extends: .job
-  image: node:18.17.1-bullseye-slim@sha256:07146b353bfe5ab1984cd706a942f5dac65de7d24866ba68a8f17cccc5ba3bd1
+  image: node:18.18.0-bullseye-slim@sha256:2799dd3bd32deb984133859e6c9dd1ee181968fcafe563f4653e5b3c151af716
 
 job3:
   extends: .job

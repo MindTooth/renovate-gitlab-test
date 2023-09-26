@@ -1,25 +1,28 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-
   "extends": [
     "config:best-practices",
     ":label(renovate)",
     ":timezone(Europe/Berlin)"
   ],
-
-  "enabledManagers": ["gitlabci", "regex"],
-
+  "enabledManagers": [
+    "gitlabci",
+    "regex"
+  ],
   "packageRules": [
     {
-      "matchPackageNames": ["passbolt/passbolt_api"],
+      "matchPackageNames": [
+        "passbolt/passbolt_api"
+      ],
       "extractVersion": "^v(?<version>.*)$"
     }
   ],
-
-  "regexManagers": [
+  "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["\\.gitlab-ci\\.ya?ml$"],
+      "fileMatch": [
+        "\\.gitlab-ci\\.ya?ml$"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-.]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s+[A-Za-z0-9_]+?_VERSION\\s*:\\s*[\"']?(?<currentValue>.+?)[\"']?\\s"
       ]

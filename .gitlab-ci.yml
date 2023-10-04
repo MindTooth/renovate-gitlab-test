@@ -6,7 +6,7 @@
 
 variables:
   # renovate: datasource=docker depName=keycloak/keycloak
-  KEYCLOAK_VERSION: 18.0.0
+  KEYCLOAK_VERSION: 22.0.4
   # renovate: datasource=github-releases depName=passbolt/passbolt_api
   PASSBOLT_VERSION: 4.0.0
 

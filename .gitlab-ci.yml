@@ -12,7 +12,7 @@ variables:
 
 job1:
   extends: .job
-  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.37.0@sha256:3cea372a13cbb9ae466ebac8213acc5217e5a396744dc937d8d1092d6b18f12c
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/aquasec/trivy:0.45.1@sha256:c05be51dfb825e4b29dbe1611ee397a21ff5b822351d3c2ba1bf0fcc67e08a2b
 
 job2:
   extends: .job
